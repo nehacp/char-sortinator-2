@@ -1,0 +1,19 @@
+{
+  "name": "char-sortinator-2",
+  "version": "1.0.0",
+  "description": "This is version 2 of Character Sortinator. It uses vanilla JavaScript, Node, Express and Body-Parserg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehacp/char-sortinator-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehacp/char-sortinator-2/issues"
+  },
+  "homepage": "https://github.com/nehacp/char-sortinator-2#readme"
+}
