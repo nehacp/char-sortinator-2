@@ -2,8 +2,8 @@ const helpers = require('./helpers');
 
 const word = {
   post: (req, res) => {
-    let result = helpers.sortDescending(req.query.word);
-    res.status(201).send(result);
+    let result = helpers.sortDescending(req.body.word);
+    res.status(201).json(result);
   }
 }
 
