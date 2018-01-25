@@ -1,6 +1,7 @@
 const word = {
   post: (req, res) => {
-    console.log('here with word', req.body.word); 
+    console.log('here with word', req.query); 
+    res.send('testing');
   }
 }
 
