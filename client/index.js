@@ -1,8 +1,15 @@
 
 // Handle result from server (Append to table)
-const handleResult = (result) => {
-  //handle ajax response here
-  console.log('response received', result);
+const handleResult = ({ word, sorted }) => {
+  const table = document.querySelector('table');
+  const row = document.createElement('tr');
+  const input = document.createElement('td');
+  const result = document.createElement('td');
+  input.appendChild(document.createTextNode(word));
+  result.appendChild(document.createTextNode(sorted));
+  row.appendChild(input);
+  row.appendChild(result);
+  table.appendChild(row);
 }
 
 // send Ajax request to server
@@ -36,7 +43,7 @@ const createPOSTRequest = (word) => {
 
 const handleSubmit = function(event) {
   event.preventDefault();
-
+  
   //get input value from input tag in DOM;
   const inputElement = document.getElementsByName('input-word')[0];
   const value = inputElement.value;
